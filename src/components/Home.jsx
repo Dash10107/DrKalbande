@@ -4,13 +4,12 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 import { Document, Page } from "react-pdf";
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import longCvFile from "../assets/CVofdrkalbande.pdf"
-import shortCvFile from '../assets/shortCv.pdf'
-import { pdfjs } from "react-pdf";
+const longCvFile = "/assets/CVofdrkalbande.pdf";
+const shortCvFile = "/assets/shortCv.pdf";import { pdfjs } from "react-pdf";
 import Slider from "./Slider";
 import Modal from "./Modal";
 import Button from "./Button";
-import pic from "../assets/images/mainpic.jpg"
+const  pic  =  "assets/images/mainpic.jpg"
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 function Home() {
